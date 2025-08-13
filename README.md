@@ -35,11 +35,15 @@ Telegram-бот, разработанный по заказу стороннег
 Для этого нужно остановить nginx процессы командой`sudo systemctl stop nginx`. Если не работает и говорит, что порт все еще занят, посмотрите процесс командой  `sudo netstat -tulnp | grep :80.`
 
 Пример вывода:
+
 ```tcp   0   0 0.0.0.0:80    0.0.0.0:\*    LISTEN      3612348/nginx: mast 
 tcp6  0   0 :::80         :::\*         LISTEN      3612348/nginx: mast```
+
 При необходимости убейте процесс, либо остановите.
 Далее нам нужно в фаервол открыть 80/tcp порт (если он у Вас не открыт) командой `sudo ufw allow 80/tcp,` затем получаем сертификат командой `sudo certbot certonly --standalone -d test.domain.ru`
+
 Вывод при успешном создании сертификата:
+
 ```Successfully received certificate.
 Certificate is saved at: /etc/letsencrypt/live/ваше_имя_домена/fullchain.pem
 Key is saved at:         /etc/letsencrypt/live/ваше_имя_домена/privkey.pem
