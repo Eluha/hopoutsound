@@ -55,7 +55,16 @@ tcp6  0   0 :::80         :::\*         LISTEN      3612348/nginx: mast
 ```
 
 При необходимости убейте процесс, либо остановите.
-Далее нам нужно в фаервол открыть 80/tcp порт (если он у Вас не открыт) командой `sudo ufw allow 80/tcp,` затем получаем сертификат командой `sudo certbot certonly --standalone -d test.domain.ru`
+Далее нам нужно в фаервол открыть 80/tcp порт (если он у Вас не открыт) командой
+```bash
+sudo ufw allow 80/tcp
+```
+
+Затем получаем сертификат командой
+
+```bash
+sudo certbot certonly --standalone -d test.domain.ru
+```
 
 
 # Схема проекта
