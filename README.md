@@ -25,3 +25,4 @@ Telegram-бот, разработанный по заказу стороннег
 - aiohttp — асинхронные HTTP-запросы
 
 - Docker + docker-compose — развёртывание и изоляция сервисов
+<img width="1286" height="542" alt="image" src="https://github.com/user-attachments/assets/f240d21f-c345-40c4-9057-66955343d979" />
