@@ -1,0 +1,5 @@
+.env
+nginx/nginx.conf
+hopoutsound-db
+bot/files_for_free
+bot/files_for_money
